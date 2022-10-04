@@ -1,0 +1,128 @@
+
+Agenda :-
+--------------
+1.basic commands
+2.user management
+3.group management
+4.file management
+
+Commands :-
+--------------------------
+1.echo :- to print the contnet 
+
+2.cal :- we can display the calender
+
+  syn :- cal
+         cal <year>
+         cal <month> <year>
+
+3.date :- To print the date,time.
+
+4.uname :-
+-----------------------
+To know about the kernal name along with system information .
+ versions,release,os
+
+*) uname :- It will print the kernal name
+
+*) uname -r :- To know the release info of kernal
+
+*)uname -v :- To the version of kernal
+
+*)uname -m :- To know about the machine.
+
+*)uname -o :- To know about the operating system
+
+*)uname -a :- To know the complete information .
+User management :-
+-----------------------------------------
+In home we will be having one system, in that system i will be having some important data i dont want to share with anyone 
+
+that time we will having feature called users 
+
+for each user if i create the users that time easily we can protect our data 
+
+
+how :-
+-----
+3 ways we can create the users.
+
+1.graphical user interface 
+2.command line 
+3.vi /etc/passwd 
+
+1.root :- He is the person one who having all the permissions.
+
+2.useradd :- To create the user 
+
+syn :- useradd <user-name>
+
+3.passwd :- To add the password to user
+
+syn :- passwd <user-name>
+
+4.openssl :- To encrypt the password.
+
+5.userdel <user-name> :- to delete the users.
+
+Group management :-
+--------------------------
+1.groupadd :- to add the users
+
+  Syntax :- groupadd <grp-name>
+
+2.vi /etc/group :- group file conatining group information.
+
+3.usermod -a -G <grp-name> <user-name> :- we are going to add the user into groups.
+
+4.groupmod -n <new-grp> <old-grp name> :- To change the groupname
+
+5.getent group :- It will display the information about user defined groups as well as predefined groups.
+
+6.remove a user from group :-
+
+gpasswd -d <user-name> <grp-name>
+
+
+
+Linux file management :-
+__________________________________--
+1./bin :- it is present inside the root dir , in  this directory we will be having executable files (commands)
+
+2./etc :- Configuartion files 
+
+3. /home :- For individual user it is going to create directorys
+
+4./tmp :- Here temporary files 
+
+5./opt :- It is completely dedicated for 3rd party applications.
+
+6./usr :-this the location of user programs
+
+7./var :-  it is standard sub directory of root directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
