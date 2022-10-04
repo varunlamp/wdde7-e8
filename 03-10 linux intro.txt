@@ -1,0 +1,174 @@
+Agenda :-
+----------------
+1.Operating system.
+2.types of os.
+3.Architecture of OS.
+4.Histroy of linux.
+5.what is linux.
+6.Architecture.
+7.Basic linux commands.
+
+
+
+
+
+Linux :-
+-------------------
+
+Operating system :-
+---------------------------
+operating system is just an interface between user and system.
+
+system it can understand only binary lang ---we dont binary 
+
+human readble lang to machine readble lang(binary lang).
+
+
+User ---- will give the input to system 
+
+middle --operating system (it will take the response from user in the human readble format convert it into machine readble lang ).
+
+system(hardware) :- It get the request from operating system based on the request it will perfrom the task and give back to os and 
+
+             os is again converts the machine readble lang (low level) into human readble lang (high level).
+
+types of operating systems :-
+------------------------------------
+1.linux.
+2.windows
+3.unix.
+4.macos.
+5.IBM.
+6.msdos.
+7.Blacyberry.
+
+
+Linux :-
+----------------------------------
+
+Linux was developed by linus torvalds in 1991. when he was the finnish student.
+
+it is completely open source.
+
+he as developed the kernal(linux is kernal based operating system)
+
+Linux-kernal source code is written in the c lang.
+
+The source code is freely avaialabel.
+
+he as combined linux-kernal with GNU -----Linux operating system(kernal based).
+
+
+Commands :-
+----------------------------------------
+Command :-
+-------
+1.touch :- it is used to create the files .
+
+   Syntax :- touch <file-name>
+
+             touch <file1> <file2>
+
+   example :- touch file1
+
+2.ls :- Display the list.
+
+  syn :- ls
+
+3.mkdir :- It is used to create the directories.
+
+  syntax :- mkdir <dir-name>
+
+4.cd :- change the directory.
+
+  syntax :- cd <dir-name> 
+
+task :-
+
+ create one directory 
+ enter into the dir
+  create 5 files 
+ make list 
+
+5.cd .. :- to come out of the directory.
+
+6.pwd :- It will print the present working Directory.
+
+    syntax :- pwd
+
+7.whoami :- It will print /to know about the user name 
+
+  syntax :- whoami
+
+8.Editors :- to add the data inside the specific file.
+
+   vi, nano , vim
+
+To save :- ctrl+s
+to exit :- ctrl+x
+
+9.cat :-  Display the data inside the file
+
+  *) cat file :- It will display the data.
+
+  *) cat > file ---- It will override the old data and it will save only new data.
+
+  *) cat >> file1 :- It will save the old data and adds the new data .
+
+10.cp :- To copy the data from one file to other or files.
+
+  synatx :- cp source dest
+
+    cp -r :- to copy the entire directory.
+
+  syntax :- cp -r source dest
+                                                            
+cp --copy.
+-r -- recurisively
+source :- from path
+dest :- To where we need to copy.
+ 
+11.mv :- to move the data from source to destination
+
+ synatx :- mv <source> <dest>.
+
+*) To rename the file/directory
+
+ syntax :- mv <oldfile> <new-file name>
+
+12.rm :- to remove the file(Delete)
+ 
+ synatx :- rm <file-name>
+
+13.rmdir :- to delete the empty directory 
+
+14.rm -rf (remove -recurisively forcefully) :- to remove non empty directory 
+
+ syntax :- rm -rf <directory-name>
+
+Assignmet questions :-
+------------------------------
+1.what is operating system
+2.examples for os
+3.Explain Linux distribution(types)
+4.what is linux
+5.basic commands withsyntax & example 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
