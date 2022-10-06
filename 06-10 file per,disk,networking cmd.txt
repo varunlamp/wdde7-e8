@@ -1,0 +1,188 @@
+Agenda :-
+--------------------
+1.Revise all the old comamnds 
+2.file permissions
+3.networking commands
+4.disk utility
+
+2.File Permissions :-
+------------------------------------------
+Scenario :-
+---------------------
+owner
+manager 
+others 
+
+Developers :- write the source code
+
+test :- Test the software 
+
+
+for files we will be giving permission :-
+-----------------------------------------------
+1.read permssion :- only they can able to read the file
+
+2.write :- Only modify (modify data)
+
+3.execution :- They can only execute the task .
+
+
+roles :-
+------------------
+Owner :- root 
+Groups :-dev,test,hr,IT
+Others(users) :- all the employess
+
+
+How to give the permission :-
+------------------------------------
+chmod 777
+
+7:- 
+
+7          7        7
+owner    group    others 
+r+w+x
+
+r--4
+w--2
+x--1
+
+
+logic.sh :- logics of our project 
+
+owner ----read    ---------4
+group ----read, write-----6
+others ----execute ----1
+
+
+command :-----------
+
+chmod 461 logic.sh
+
+
+---------------------------------------------
+
+step 1:- mkdir file-permission 
+
+step 2 :- cd file-permission
+
+step 3 :- touch file1
+
+step 4 :- ls -l(to long list)
+
+step 5 :- permissions 
+
+rw       r         r
+owner   groups  others
+
+owner --- r-----4
+groups ----rw---6
+others ----rwx---7
+
+chmod 467 file1
+
+
+task :-1
+---------------------
+create one file :-
+check the permissions
+add permissions 
+
+owner --- x --1---
+
+--x
+groups---r--4
+others---rx--5
+
+
+task 2:-
+-----------
+touch india 
+ls -l
+
+owner --rwx
+groups --x
+others ---no permission 
+
+method 2 :-  by adding the alphabets
+-----------------
+chmod u=rw,g+w,o-r <file-name>
+
+networking commands :-
+-------------------------------------
+To check the respecitve network related data
+
+1.ifconfig :-To check the Ip address, mac address , mtu(maximum transmission unit).
+
+2.ping <application> :-
+
+3.route:-
+
+4.netstat:-  
+
+5.host command : - dns lookup
+
+6.nslookup :- Dns lookup
+
+7.dig (domain information groper):-
+
+8.last :- It will display the recently logged in users.
+
+Disk Utility :-
+----------------------------- 
+1.df :- disk usage 
+ 
+ option :- df -hT --- It will display the information in human readable lang
+
+2.parted -l :- create, re-organize the block , copy the disk data
+
+3.fdisk -l :create and manage disk partitions 
+
+4.lsblk :- list block :- mounted block, devices, name, mountpoint
+
+5.blkid(block-id) :- Block devices or paratition names, label, filessystem, UUID
+
+
+Assignments :-
+------------------
+1.document on command with example & syntax
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
