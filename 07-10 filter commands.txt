@@ -1,0 +1,140 @@
+Agenda:-
+------------------
+1.filter commands 
+
+Next class
+---------------------
+2.file compression forms 
+3.crontab
+4.I/O redirection
+
+
+1.filter commands :-
+-------------------------
+database :- We will be having one contnet in that respective file we will be having all the information like
+
+Governament:-
+------------------------
+Army-base:-
+----------------
+BSF :- Multiple branches (sectors ,gujrat,delhi,rajastan,kashmir)
+Airforce--- :- Bidar,banaglore,hyd,mumbai
+Navy:- Kolkatha,chenai,goa
+
+more than crores :-
+----------------------
+in that i want only the information about resepective one person
+
+bsf
+gujrat
+b group
+ajay
+he is from karanataka
+
+
+Ajay ---in the army database it will give me the more number of soldiers
+
+
+filters:-
+------------------------------
+
+IT industry:-
+-----------------------
+linux :- Servers we will be using linux operating system
+
+we want only data 
+easily we can get the data/information
+
+
+How to use filter commands :-
+------------------------------------
+1.find :- It is used to find the file/dir with respect to the name,date/options <alpha>
+
+syntax :- find <file-name>
+-----------------------------------------------------------------------------------------------------
+2.head :- It is used to display the data from staring(first-line) by default it will print 10 lines 
+
+ syntax :- head <file-name > :- By default it will starting 10 lines 
+
+*) -n :- To print the specific number of lines 
+
+syntax :- head -n <number-of lines> file-name
+
+*) -v :- Verbosely it will display 
+
+*) -c :- by using this we can print the respective number of character
+
+   syntax :- head -c <numof char> file
+
+*) -q :- It will not print the file-name 
+--------------------------------------------------------------------------------------------------------
+3. Tail :- It will display the data from last line.
+
+syntax :- tail <file-name>
+
+*) -n :- To print the specific number of lines 
+
+syntax :- head -n <number-of lines> file-name
+
+*) -v :- Verbosely it will display 
+
+*) -c :- by using this we can print the respective number of character
+
+   syntax :- head -c <numof char> file
+
+*) -q :- It will not print the file-name 
+
+------------------------------------------------------------------
+4.pipeline Operator:-(|)
+-----------------------------
+The pipeline is a operator that lets you two or more commands 
+
+1 st command output will pass as an input to 2nd command
+
+syntax :- head -n 5 file | tail -4 
+--------------------------------------------------------------------
+5.sort :- To sort the data according to ASSCI values
+
+synatx :- sort <file-name>
+ 
+           sort -r <file-name>
+-----------------------------------------------------------------------
+6.uniq :- to avoid the duplicat data
+
+uniq <file>
+uniq -c <file-name>
+uniq -d <file-name>
+--------------------------------------------------------------
+7.Grep :- Global Regular expression print
+
+syntax :- grep <word> <file-name>
+
+----------------------------------------------------------------------------
+8.Sed :- Stream editor
+It is used to edit the streams (files) ,but this editing it is not permanent, It remains only display 
+
+here we are modifying the output 
+
+syntax :- sed 's/old-data/new-data/' file-name
+
+example :- sed 's/bangalore/siliconcity/' file-name
+------------------------------------------------------------------
+9.awk :- 
+
+syntax :-  awk '/option/ {print}' file-name 
+
+awk '{print NR,$0}' airforce
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
