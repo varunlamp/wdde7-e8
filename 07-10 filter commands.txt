@@ -118,6 +118,12 @@ here we are modifying the output
 syntax :- sed 's/old-data/new-data/' file-name
 
 example :- sed 's/bangalore/siliconcity/' file-name
+
+
+To print the specific number of line
+-------------------------------------
+
+sed -n 5,8p <file-name>
 ------------------------------------------------------------------
 9.awk :- 
 
