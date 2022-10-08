@@ -1,0 +1,195 @@
+Agenda :-
+--------------------
+1.file compression ---done
+2.I/O redirection & error redirection---
+3.cron tab
+4.shell scripting
+
+1.file compression:-
+-------------------------------
+we developing the one application 
+
+in that respective application we will be having some feature --- 10 features for individual feature it is taking 3mb -
+
+3mb*10=30mb 
+
+file compression --- I can add 10 features in a single file 
+
+when we go to trip that time will take the pictures, there will total minimum 100 photos ----8mb 
+
+i will add all the photos into a single file --- i am trying to compress the file size along with all the photos will be present inside
+the single file 
+
+
+1.TAR :- Tape archive 
+
+syntax :- tar cvf file.tar file1 file2 
+
+example :-
+
+touch airforce bsf navy
+
+tar cvf army.tar --- TO create the tar file
+
+tar xvf army.tar ---To extract the tar file
+---------------------------------------------------------------------
+2.ZIP :-
+
+syntax :- zip <zip-file> file1 file2  :- To create the file
+
+          unzip <file-name> :- To Extract the file
+-----------------------------------------------------
+
+3.GZIP :- 
+
+syntax :- gzip <file-name>
+
+
+
+
+2.Input output redirection:-
+---------------------------------------------
+1.input redirection :- 
+----------------------------
+To Redirect the Input 
+
+syntax :- cat < file
+
+2.Output Redirection :-
+---------------------------
+To Redirecting the output
+
+echo "hello" > file
+
+installtion:--
+----------------
+update
+echo "update is complted"   >>>>>>>>>>>>>>>>>>>>> File 
+
+tomcat 
+echo "tomcat installtion is done"   >>>>>>>>>>>>>>>file
+
+
+
+Error Redirection:-
+-------------------------------
+If i am executing the wrong command what ever the error msg i am getting i want to print that respective
+error msg in one file
+
+
+syntax :- zcho "hello" 2> errorfile
+
+-------------------------------------------------------
+cron job/tab :-
+--------------------------
+scheduling the jobs 
+
+alarm 
+
+sending 
+
+
+if i want to send a msg to my friend exactly 12 
+
+sheduling  
+
+
+cron job :-
+--------------------
+some test cases 
+
+my developer he will tell the build will deploy to testing server at morning 4--- smoke testing -- generate the report 
+
+
+how to create the cron jobs :-
+--------------------------------------------------
+shell script :-
+
+#!/bin/bash
+
+date >> /home/ec2-user/file-compression/date.txt
+
+step 2 :-
+
+crontab -e :- Default command to create the cron jobs 
+
+it will open the terminal in that terminal we need to create the job
+
+* * * * * /home/ec2-user/file-compression/cron.sh
+
+crontab -e :- It will open the terminal to create the jobs
+
+crontab -l :- It will display the list of cronjobs 
+
+crontab -r : To delete the cron jobs ....
+
+
+
+
+
+-----------------------------------------------------------------------------
+creating one shell scripting :-
+------------------------------------
+step 1 :-touch basic.sh
+
+step 2 :- nano basic.sh
+
+step 3 :- add some commands in the respective .sh file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
