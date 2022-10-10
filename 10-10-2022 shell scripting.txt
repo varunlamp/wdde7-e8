@@ -1,0 +1,167 @@
+Shell scritping:=
+---------------------------------
+Shell :- shell is user program 
+
+scripting :- Loosly typed commands
+
+why need shell scritping:-
+----------------------------------------------
+1.repetative task :
+Manger will assign one task , i need to install the tomcat 
+
+shell scripting i will script in that script i will add the commands to install the tomcat along 
+with configuring .
+
+Same script i will execute .
+
+2.back up purpose :-
+-------------------
+by using crontab and shell scripting we will be taking regular backup.
+
+3.To monitor the system :-
+----------------------------------
+
+
+touch file 
+pwd
+ls 
+useradd 
+
+how to read the data from user 
+
+read variable 
+
+Basic script:
+------------------------
+step 1 :-nano basic.sh
+
+step 2 :-
+#!/bin/bash ----shibanag line
+
+echo "hello world"
+
+step 3 :- To execute 
+
+sh file.sh
+
+---------------------------------------------------
+Variable :-
+-------------------------
+variable is a named memory location which is used to store the data & it can be changed 'n' number 
+of times during the execution.
+
+for example :- water bottel--- Raw Plastic  
+
+varaible :- water bottel 
+
+ we will using :- water botel will fill the water 
+
+we will using the water bottel we utilization
+
+declaring the variables 
+
+
+Variable we will be having 3 types :-
+---------------------------------------
+1.user defined variables
+declaring and using the varaible :- x=10
+
+utilization of the varaible :- $x
+
+example for variable :-
+--------------------------
+#!/bin/bash
+
+x=10---- i am stroing the value of 10 in x
+
+echo the value of x $x  --- I am utilizing the value of x 
+-----------------------------------------------------------------------
+
+
+but i want the data from user (i want to read the user value)
+
+#!/bin/bash
+
+read x
+
+echo the value of x is $x
+------------------------------------------------------------------------------
+
+#!/bin/bash
+
+echo enter the name
+read name
+
+echo enter the age 
+read age
+
+echo nbame of the user is $name & the age is $age
+
+2.system defined variables:-
+--------------------------------
+1.$HOME
+2.$OSTYPE
+3.$PWD
+4.$UID
+
+3.environmental variables:-
+---------------------------------------
+unset 
+set
+printenv
+
+
+file management :-
+----------------------------
+echo enter  the file name
+
+read file
+
+c=`cat $file | wc -c`
+echo "the number of words in $file is $c"
+
+Expressions :-
+------------------------------------
+Arithmetic operatores :- +, -, * ,/ , % , = ,== , != 
+
+Logical opertores :-
+-------------------------
+1.-eq :- Equality condition
+2.-ne :- not equal
+3.-gt :- Greater than
+4.-ge :- Greter then/ equal to
+5.-lt :- Less then
+6.-le :- less then or equal to
+
+Examples :
+--------------------------------------
+1.
+var1=10
+var2=15
+
+sum=$((var1 + var2))
+echo $sum
+
+2.
+read -p "enter the value of x" x
+
+read -p "enter the value of y" y
+
+sum=`expr $x - $y`
+
+echo the sum  of the x and y is $sum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
