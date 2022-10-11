@@ -14,6 +14,8 @@ we will be taking input from the file
 
 cat < file-name 
 
+wc -l < file
+
 2.output redirection :-
 --------------------------------
 by using this we will storing the output in one file
@@ -127,6 +129,10 @@ step 3 :- in crontab we need to shedule the job
 step 4 :- chmod 777 cron.sh
 
 step 5 :- tail -f cron.txt
+
+crontab -l :- to list the jobs 
+
+crontab -r :- to remove the job
 
 
 
