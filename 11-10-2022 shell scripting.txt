@@ -1,0 +1,171 @@
+Agenda :-
+-----------------
+conditional statemets 
+looping statements
+
+revision :-
+-------------------
+1.varaibles
+
+system defined variables
+user defined variables
+environment variables
+
+2.expressions 
+
+arthemetic operators
+logical opertors
+
+--------------------------------------------------------------------
+
+Looping statements :-
+-------------------------
+until the condition get satisfy we will be using looping statements 
+
+for example :-
+-----------------
+facebook :- for 10k 
+
+manually if i am executing the task (tedious)
+
+looping statemts :- 1--10k 
+
+1.for llop 
+2.while loop
+3.until loop 
+
+
+1.for loop :-
+--------------------
+here we are specifying how many times it needs to print the data 
+
+
+example :- 
+
+for varname in file1 file2 
+do 
+echo $varname
+done 
+
+-----------------------
+example :-here i am tring to print the tables
+
+
+read -p "please enter the number" number
+
+for var in 1 2 3 4 5 6 7 8 9 10
+
+do
+
+echo $((var * number))
+done 
+
+---------------------------------
+to list the files :-
+--------------------------
+
+for i in * 
+do
+echo $i
+done 
+
+--------------------------------------------
+while loop :-
+---------------
+
+init=1
+while [[ $init -le 10 ]] 
+do 
+echo $init
+((init++))     # incrementing the value of init 
+done
+
+#to print the tables
+
+read -p "enter the number " i
+init=1  #after incrementing it will increse the init
+
+while [[ $init -le 10 ]]
+do
+echo $((init * i))   
+((init++))
+done
+
+----------------------------------------------------
+until loop :-
+------------------
+i=0
+until [[ $i -eq 4 ]]
+do
+echo $i
+((i++))
+done
+
+condtions :-
+-----------------------
+when the condition get satisfy then only it will get execute the condtion
+
+if 
+if-else
+else-if 
+
+1.if:-
+------------------
+for example your mom will send you to vegetable market to bring onion ,
+
+you go to market if onion is there then only you will buy or else you will come back to home in empty 
+hand .
+
+echo "enter a number"
+read number
+
+if [[ $number -lt 10 ]]
+then 
+echo $number is less then 10
+fi 
+
+if-else:-
+------------------
+echo "enter the value of a"
+
+read a
+
+if [ `expr $a % 2` == 1 ]
+then 
+echo "$a is odd number"
+else 
+echo "$a is even number"
+fi
+
+
+else-if:-
+------------------
+read a 
+
+if [ `expr $a % 2` == 0 ]
+then 
+echo "even"
+
+elif [ `expr $a % 2` ==1 ]
+then 
+echo "odd"
+fi
+
+
+assignemt:-
+------------------
+1.using while loop print the tables 
+2*1=2
+2*2=4
+
+2.if-else 
+using if-else when the condtion is true then it needs print the even numbers 
+
+
+
+
+
+
+
+
+
