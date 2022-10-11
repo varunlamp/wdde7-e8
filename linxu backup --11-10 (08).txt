@@ -1,0 +1,143 @@
+Agenda :-
+----------------------------
+Input output redirection 
+Error redirection
+file compression forms
+crontab
+
+
+1.input output redirection:-
+-----------------------------
+input :- we will giving a input to system 
+
+we will be taking input from the file 
+
+cat < file-name 
+
+2.output redirection :-
+--------------------------------
+by using this we will storing the output in one file
+
+installing the tomcat 
+echo "tomcat installation is done" > information 
+install java > information 
+configure the tomcat > information 
+ 
+
+3.error redirection :-
+--------------------------------
+if i am executing the some task configuring the applications
+
+i will get some errors 
+
+so i dont want to print the error msg in terminal 
+i want to print this error msg in one data
+
+
+java ----if i get the error msg 
+it will store the error msg in one file
+-----------------------------------------------------
+
+4.file compression forms :-
+----------------------------------
+we have went for trip 
+
+trip we have taken some 100 pics ---it will be 
+
+what we will 
+will comprees(will add 100 pics in single file ) then we can send
+
+--------------------------------------------------------------------
+while developing the software we will be having multiple features --20 feature 
+for ind feature taking 5mb 
+
+the application size i want only 20mb & all the features what we have developed i need all the 
+features in single file 
+
+1.tar :-
+
+*)to create the tar file :-
+
+syntax :tar cvf file.tar <file1,file2.file3>
+
+c- to create the tar file
+v- verbosely(complete information about the file)
+f--file 
+
+*) to extract the files 
+
+syntax :- tar xvf <file.tar>
+
+example :- tar xvf file.tar 
+
+x: extract the file
+v : verbosly
+f : file
+
+2.zip:
+
+to create the zip file
+
+synatx :- 
+zip <file.zip> <files>
+
+example :- zip insta.zip file1 file2 file3 facebook.tar 
+--------------------------------------------------------------
+
+3.gzip(gnuzip/gunzip)
+-----------------------------
+it is for compressing the indidual files 
+
+example :- gzip file1 file2 file3 
+
+to decompress :-
+
+syntax :- gzip -d <file.gz>
+
+crontab:-
+----------------------
+sheduling the job (like alarm) 
+
+for example in our mobile we will be using messages but i want to send one msg to my friend at 
+night 12 that time i will shedule the by this it will send the messge at the 12
+
+similarly :-
+-------------------
+crontabs 
+
+for example :- we will having some test cases but i dont want to execute now, i want to execute this 
+               file in early morning 4 
+
+shedule the job by using cronjobs 
+
+how to shedule the job using the cron :-
+--------------------------------------------------
+step 1 :- we need to create one file 
+
+#!/bin/bash
+
+date >> /home/ec2-user/cron.txt
+
+step 2 :- we need to run the command called crontab -e 
+
+step 3 :- in crontab we need to shedule the job
+
+* * * * * /home/ec2-user/cron.sh
+
+step 4 :- chmod 777 cron.sh
+
+step 5 :- tail -f cron.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
