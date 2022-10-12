@@ -1,0 +1,182 @@
+Agenda :-
+----------------
+1.case-esac (Switch)
+2.functions
+3.arrays
+4.passing arguments
+
+NOTE:-After commands we need to give the space 
+
+1.Case-esac statements :-
+--------------------------------
+it will work like a choosing the specific options 
+
+read name
+case $name in
+
+india)
+echo "India is the greate country"
+;;
+Usa)
+echo "usa is also great"
+;;
+esac 
+
+write a shell script to run the calculator using case statements :-
+-------------------------------------------------------------------
+
+echo "enter the char"   # it will print this statement
+read opt                  #here we need choose the options(arth)
+case $opt in           # it is going to execute 
+
++)
+echo "enter the value of a "                   
+
+read a
+echo "enter the value of b "
+
+read b
+echo  the sum is `expr $a + $b`
+;;
+
+-)
+echo "enter the value of x "
+
+read x
+echo "enter the value of y "
+read y
+echo `expr $x - $y`
+;;
+
+\*)
+echo "enter the value of c "
+read c
+read d
+echo "enter the value of d"
+echo `expr $c \* $d`
+;;
+
+/)
+echo "enter the value of e "
+read e
+echo "enter the value of f "
+read f
+echo `expr $e / $f`
+;;
+
+*) 
+echo "this is the default option"
+;;
+esac
+
+
+------------------------------------------------------------------
+Array :-
+-----------------------
+consider a situation if we want to store 100 numbers & perform operations on them if we use
+simple variable concept then we have to create 100 variables & 100 perform the operation
+it is the dificult job
+
+in array we can store 100 numbers in a single value & we can access all the numbers 
+
+arr=(india is the greatest country )
+     0     1   2   3        4
+echo ${arr[@]:0}
+echo ${arr[@]:4} 
+
+
+-----------------------------------------------------------------------------------
+Functions :-
+---------------------
+Functions are group of statements it will get execute when ever it is called or invoked ...
+
+a b c d ---all the task 
+case ---ind we will executing
+
+1.for example we will installing , configure, pacakage 
+
+2.for example we will be writing the source code for passport seva application 
+in the passport seva app we will be having 100 features 
+
+while writing the source code 
+
+for 100 if i write the code continously then i will execute if any errors in the source code that as a error
+it will show the 100th line error 
+
+100 functions 
+
+singup
+
+login
+
+search
+
+Example :-
+-----------------
+sum()                #() is the sign of functions 
+{
+read x
+read y
+c=`expr $x + $y`
+}
+
+sum 
+
+
+Write shell script for executing multiple functions :-
+----------------------------------------------------------
+install()
+{
+echo " ${FUNCNAME} installing the $1"
+}
+
+config()
+{
+echo "configuring the tomcat $1"
+}
+
+pkg()
+{
+echo "pkg is ready $1"
+}
+
+install 1 nginx
+pkg jenkins
+
+
+passing Arguments :-
+-----------------------
+sum()
+{
+x=`expr $1 + $2`
+echo $x
+}
+sum 6 7
+
+
+assigment:
+-------------------
+1.case-esac
+write a shell script to execute a choose the Fruits:-
+---------------------------------------------------- 
+
+2.array:
+----------------------
+write a shell script using array 
+2 examples
+
+
+3.2 examples on functions 
+
+4.2 examples on passing the arguments 
+
+
+
+
+
+
+
+
+
+
+
