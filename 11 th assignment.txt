@@ -1,0 +1,8 @@
+assignemt:-
+------------------
+1.using while loop print the tables 
+2*1=2
+2*2=4
+
+2.if-else 
+using if-else when the condtion is true then it needs print the even numbers 
