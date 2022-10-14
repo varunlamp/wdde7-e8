@@ -1,0 +1,98 @@
+Agenda:-
+--------------------
+1.will revise shell scripting
+2.revise git intro
+3.discuss some basic commands  
+
+working with Repository:-
+--------------------------------------
+1.working directory 
+2.staging area 
+3.local repo(history, snapshot)
+4.remote repo
+
+
+
+Working with git :-
+------------------------
+1. cloned one repo from the github 
+
+syntax :- git clone <repo-url>
+
+2.we need to enter into the dire/repo
+
+3.when we clone the repo that time one local repo will be created with the name of .git within the repository
+
+
+step 1 :- touch file1
+
+step 2 :- git status (to check the branch status)
+
+step 3 :- to add the files into staging area --Transfer our project from working directory to staging area    
+git add <file-name> 
+
+step 4 :- Transfer our project from staging area to our local repo ---we will creating the history of the changes 
+
+git commit -m "valid msg" (snapshots)
+
+step 5 :- to add the user information to system(repo)
+
+git config --global user.name "user-name"
+
+git config --global user.email "mail-id"
+
+
+
+step 6 :- to check the commit history 
+
+git log 
+
+# to get the commit history in oneline
+
+git log --oneline
+
+
+step 7 :- to create the branch 
+
+syntax :- git branch <branch-name>
+
+step 8 :- to check the branches 
+
+syn :- git branch
+
+step 9 :- to change the branch 
+
+syn :- git checkout -b <branch-name>
+
+NOTE :-
+
+we are working in the branches 
+
+here Main/master branch are the parent branches 
+
+after this what ever the branches will be creting it will the child branch 
+
+it will inherit the files from parent branch
+
+
+0 -*
+7,17 -*
+*
+*
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
