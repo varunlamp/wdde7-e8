@@ -1,0 +1,230 @@
+Agenda :-
+--------------
+1.local and global variable
+2.file reading using shell scripts
+3.Git Introduction.
+
+
+
+In functions we will discuss about local and global variables :-
+-----------------------------------------------------------------
+
+local variable :-
+----------------
+It is dedicated to only local area , we will be declaring local variable with in the local area 
+
+we will be declaring the local variable within the block 
+note :- the scope of the local variable is within the local area
+
+
+Global variable :-
+-----------------------
+The scope of the global variable is global and we will be declaring global variable outside the 
+block 
+
+
+
+Example :-
+-------------------
+
+pkg=nginx               #it is the global variable 
+install()
+{
+echo "$pkg is installing"
+echo $FUNCNAME
+}
+
+config()
+{
+pkg=tomcat                  #it is the local variable 
+echo "$pkg is configuring"
+echo $FUNCNAME
+}
+
+
+install
+config 
+
+
+
+
+
+
+Write a shell script to count the number of characeters& lines  in the file:-
+--------------------------------------------------------------
+
+echo enter the filename
+
+read file
+
+c=`cat $file | wc -c` 
+l=`grep -c "." $file`  
+w=`cat $file | wc -w` 
+
+echo "number of char in $file is $c"
+echo "number of lines in $file is $l"
+echo "number of words in $file is $w"
+
+
+Git :-
+------------------------------------
+Git is a distributed version control system
+
+1.what is version control system :-
+-------------------------------------
+A version control system is a system that maintains diff versions of our project 
+when we work in team or an individual as the project progresses,
+new features get added to it , so a version control system maintains the all the differnent 
+versions 
+
+Ajio :-
+--------
+old version :- cart , coupns 
+
+new version :- points (for paying the bills) --When they release(deploy into production server)
+
+as a end user we are going update our ajio application 
+when we update from that time our ajio application is only not working 
+
+Rollback :- swiching back to the old version 
+
+while storing the project what we need to do we need to store the versions in the form of
+
+example :- ajio --old version(basic version )
+           versions :-ajio-feature1
+           versions :- ajio-feature2
+
+In version control systems we will be having 3 types :
+-------------------------------------------------------------
+1.local version control system
+2.centrailsed version control system(cvcs)
+3.Decentrailsed version control system(DVCS)
+
+1.local version control system :-
+---------------------------------------------
+In intial days we will be using our local systems in the local system only we will writing the source code 
+and we will storing
+
+drawback :-
+--------------
+1.other teamates they are not able see the code
+2.if any crash/disaster happens to the system that time what ever the source code we are written it is 
+  completely gone.
+  
+to overcome this drawback we have developed one new version control system called 
+
+2.centrailsed version control system
+---------------------------------------------------
+Here developers are working in there systems and they will be storing the code to the central repo
+we need to have the internet connection 
+
+the source code it will be not available in the local system it will be only available in central repo
+
+Drawback :-
+---------------
+The source code will be stroing into central repo only 
+if anything happens to central repo then what ever the code we have written it will lost.
+
+To overcome the drawbacks of centrailsed version control system we will having 
+
+3.Decentrailsed version control system:-
+---------------------------------------------
+Distributed version control system means every collaborator has a local repository of the project 
+the project information will be present in his/her local machine 
+
+remote repo :- Github 
+
+
+------------------------------------------------------------------
+Git :- Global information tracker
+
+------------------------------------
+Git Repositroy it consit of 4 parts :-
+----------------------------
+
+1.working Directory:-
+----------------------------------
+This is our local Directory where you make the project (write code) & make the changes to it.
+
+2.Staging area(or index):-
+--------------------------
+This is an area where we first need to put our project before commiting this is used for code review by other
+team members 
+ 
+3.Local repositroy:-
+-----------------------------
+This is our local repo where we commit changes to the project before pusing to remote repo
+ 
+4.Central Repository:-
+-----------------------------------
+This is the main project on central server a copy of our local system as well as every team member can access the
+the repository. 
+
+Steps for  working with git :-
+---------------------------------------
+step 1 :- open the github.com
+
+step 2 :- create one new repo(click on + feature , choose create repo)
+
+step 3 :- clone it to local system
+
+syntax :- git clone <url>
+
+step 4 :- enter into the repo
+
+step 5 :- touch file.txt
+
+step 6:- git status :- to check the status of the branch 
+
+step 7 :- Add the file to stagging area  
+git add file.txt
+
+step 8 :- we need to commit 
+
+ *) before commiting we need to specify the username & mail id 
+
+git config --global user.name  "user-name"
+
+git config --global user.email  "mail-id"
+
+
+to commit 
+----------------
+git commit -m "valid message"
+
+step 9 :- To check the commit history 
+git log 
+
+step 10 :- Check the diffence between the files 
+
+old version :- i have created on file <file.txt> (empty file)
+
+modified (updated the file) :- hello world
+
+syntax :- git diff
+
+
+
+
+
+
+
+
+
+
+
+assignment:-
+-------------------
+1.what you mean by this warning msg:-
+----------------------------------------------
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next time Git touches it
+
+
+
+
+
+
+
+
+
+
