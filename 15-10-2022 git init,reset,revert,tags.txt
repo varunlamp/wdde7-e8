@@ -1,0 +1,213 @@
+agenda :-
+------------------
+1.git init
+2.git reset
+3.git revert
+4.git tags  
+
+
+1.git init :-
+--------------------------
+scenario :-
+when we are developing the application that time we will be writing the code 
+we have written source code local folders 
+but now i want to add the files which i have already written 
+
+we will convert that exesting directory as a repository 
+
+yeasturday what we have discuss
+--------------------------------------------------------------------------
+we have discussed about git clone
+
+git clone :-it is used to copy the remote repo to local system
+
+touch file
+
+git add file 
+
+git commit -m "msg"
+
+git push origin <branch-name>
+----------------------------------------------------------------
+Repositroy having 4 parts :
+
+1.working directory
+
+touch file
+
+2.staging area
+
+git add file
+
+3.local repo
+
+git remote -m "msg" --git reset 
+
+4.remote remote repo
+
+----------------------------------------------------------------------------------------------------------
+git init :- in local system we are going intialize the repo then we will connect with the remote 
+
+step 1 :- will intialize the repo 
+
+syntax :- git init --it will convert the execisting directory as a repo
+  
+          git init <repo-name> ---it will create the repo with the name (what we are passing)
+
+step 2 :- create one file 
+
+step 3 :- add the file to staging area
+
+step 4 :- add the file to local repo
+
+step 5 :- git remote add origin <url>
+
+I am going connect local repo remote 
+
+goldenbatche7e8------wdde8e7
+
+
+step 6 :- git remote -v
+
+step 7 :- git push origin <branch>
+
+-------------------------------------------------------------------------------------------
+scenrio:-
+--------------------
+while working /i am writing i have created 5 files in the files i am writing different diff logics 
+
+in 5 files i have completed only 4 files (code) 
+
+i have added 5 files to staging but is completed for only 4 files 
+
+now i want to remove the file from staging area 
+
+git reset:
+--------------------------
+by using git reset we can get the file from staging area to working directory
+
+ 1)by using git reset we can remove the file from staging area 
+
+syntax :- git reset <file-name>
+
+ 2) and also we can remove the commits 
+
+syntax :- git reset head~1 ---reset top 1 commit
+
+The commits removed from the commit histroy and changes are back to staging area
+git reset --soft head~1
+
+
+It will remove from commit history and changes are permanently deleted so this is a destructive command so
+use this command wisely
+git reset --hard head~1
+
+
+commit what we are removing by using git reset it will remove the number of commits 
+
+1.git reset --soft head~1
+----------------------------------
+1.working directory
+
+touch file
+
+2.staging area
+
+git add file
+
+3.local repo
+
+git commit  -m "msg" --git reset 
+
+4.remote remote repo
+
+
+git reset --hard head~1
+-----------------------------
+1.working directory
+
+touch file
+
+2.staging area
+
+git add file
+
+3.local repo
+
+git commit  -m "msg" --git reset --hard head~1 
+
+note :- permanenetly it will delete the changes 
+
+4.remote remote repo
+
+git reset will be having one drawback :-
+---------------------------------------------
+it only works with top n commits 
+we cannot specify the particular commit 
+
+to over come the draw back of git reset we will having git revert
+---------------------------------------------------------------------
+
+git revert :-
+------------------------------------------------
+git revert is used to remove the commit messages (undo the commits )
+
+if the commits are present are in the remote also we can undo the commits 
+
+now we are in the working directory 
+will create one file in working directory 
+
+will add the file to staging area
+
+will add the file to local repo
+----------------------------------------------------
+
+git tag :-
+
+if we are having 1000 commits in that commit i want to search the specific commit 
+
+tagging the important checkpoints in the course of projects 
+1 st commit 
+
+2nd 
+
+3rd 
+
+
+4th 
+
+
+5th commit i am going complete the work ---complte feature is ready ---tag 
+
+2 types of tags:
+--------------------------------
+1.light weight
+
+this tags contains only the commit checksums 
+
+syntax :- git tag <tag-name> <commit-id>  
+
+---------------------------------------
+
+2.annotated 
+
+syntax :- git tag -a <tag-name> <commit-id> -m "msg"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
