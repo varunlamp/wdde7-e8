@@ -1,0 +1,261 @@
+Agenda :
+-------------
+1.Revise the commands 
+2.git stash
+3.git merge(2 way & 3 way merging)
+4.git pull
+5.git fetch
+
+basic commands :
+-------------------------
+1.git init :- it is used to create/initialize the local repo
+
+syn :git init <repo-name> or git inti
+
+2.git clone :- it is used to copy/download  remote repo to local repository
+
+3.git add <file-name> :- to add the file from working directory to staging area 
+
+4.git commit -m "msg" :- to add the files from staging area to local directory/repo
+
+5.git status :- it is used check the status of the branch 
+
+6.git log :- It is used to check the commit history
+
+git log --oneline
+
+7.git config --global user.name "user-name"
+
+8.git config --global user.email "email"
+
+9.git config --all
+
+10.git remote add origin <url> :- to add the local repo to remote repo(to connect)
+
+12.git push origin <branch-name> :- to push the local changes to remote 
+
+13.git branch <branch-name > :- to create the branch
+
+14.git branch :- it is used to list the branches 
+
+15.git reset head~1:- it is used to remove the commits  from local repo to working 
+   directory 
+
+git reset --soft head~1
+
+git reset --hard head~1
+
+git reset --mixed head~1 
+
+16.git reset <file> :- remove the files from staging area and it will send back the
+files to working directory
+
+17.git revert :- it is used to delete the commits (to overcome the drawback of g
+                 -git reset) by using this we can delete the specific (particular)
+               commits
+
+18.git tag :- it is used to tag the commits 
+
+         tagging the important checkpoints in the course of projects 
+
+
+2 types 
+
+1.light weight tag 
+
+git tag <tag-name > <commit-id>
+
+2.Annotated tag 
+
+git tag -a <tag-name> <commit-id> -m "msg"
+
+19.git checkout <branch-name > :- it is used to switch the branches 
+
+git checkout -b <branch-name>
+
+-----------------------------------------------------------------------------------
+1.git merge :-
+-------------------
+Git merge is nothing but adding/combining the branches (we will be adding the commits)
+
+git merge 2 types :-
+--------------------------
+
+1.2 way merging/ fast forward merge:-
+
+step 1  :- git checkout -b feature 
+
+master is the parent branch when ever we create a new branch with master the files
+what and we have created in master it will be inherited to child branch
+
+step 2 :-  nano file
+
+step 3:- git add file
+
+step 4 :- git status
+
+step 5 :- git commit -m "msg"
+
+step 6 :- git log --oneline
+
+step 7 :- git checkout master 
+
+step 8 :- ls
+
+step 9 :- git log --oneline
+
+step 10 :- git merge feature 
+
+step 11 :- git log --oneline
+
+step 12 :- ls
+
+
+master --1001
+ feature ---1002 
+
+git merge feature 
+
+1001-1002 (master, feature)
+-----------------------------------------------
+
+2) 3 way merging 
+-------------------------
+master ---1001, 1002,1003 -----1007
+                         ---feature 1004,1005,1006
+
+
+3 way merging we will be comparing 3 commits 
+
+1003--1006---1007
+
+nano new-file 
+
+step 1 :- c1 
+
+modified nano new-file 
+
+step 2 :- c2
+
+modified nano new-file 
+
+step 3 :- c3
+
+modified nano new-file 
+
+step 4 :- create new branch 3rd commit & switch to the new branch 
+
+modified nano new-file 
+
+step 5 :- f1
+
+modified nano new-file 
+
+step 6 :- f2
+
+modified nano new-file 
+
+step 7 :- f3
+
+git checkout master 
+
+git merge <new-barnch>
+
+then it will arise the conflict 
+
+
+
+
+
+conflict 
+
+
+c1-c2-c3-c4 
+
+f1-f2-f3
+
+
+git stash :-
+
+-------------------------
+the git stash is used to save the data for the temporary 
+
+sceanrio:-
+-----------------
+
+facebook appliction :- is already present in the production server
+
+dev1                dev2                    team-lead 
+
+ 
+friend-req       upload the pics     testing the features  
+
+he got know upload pics we geeting one blocker defect we need to fix this bug as much as quicker we need solve 
+
+it will affect to custmer bussiness 
+
+he will comunicate to dev2 to fix this bug but dev2 is not available due to some region 
+
+test will commuinicate to dev1 and he will tell dev1 to work on the bug 
+
+dev 1 is going to fix the bug 
+
+but dev1 is also working on the friend -req but what ever the source code writing still the work is not completed he is 
+not ready to commit (commits we will stroing it as versions ) 
+
+dev1 will use git stash what ever the source he as writen it will be the temp folder 
+
+
+
+without adding the commits 
+
+without commit we cant able to checkout 
+
+step 1 :- nano file
+
+step 2 :- git add file
+
+step 3 :- git stash 
+
+step 4 :- git list 
+
+step 5 :- git status
+
+step 6 :- git stash apply 
+
+step 7 :- git stash pop :- it will apply the changes and it will remove from the  list 
+
+step 8 :- git stash show <stash-id>
+
+---------------------------------------------------------------------
+git fetch :-
+----------
+fetch is used get the new changes from the remote repo 
+
+it will give the new changes and it will get stored in 
+
+To show :- nano .git/FEATCH_HEAD
+
+
+git pull :-
+-------------
+it will download the new changes to local repo 
+
+
+
+
+
+saturday --22-10-2022 
+
+in class hours you need to give presentation on linux , shell scripting 
+
+
+
+Assignment :-
+---------------
+1.git stash 
+2.git fetch
+3.git pull
+4.difference between git fetch and git pull
+
+
