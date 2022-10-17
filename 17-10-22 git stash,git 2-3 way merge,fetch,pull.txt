@@ -234,14 +234,18 @@ fetch is used get the new changes from the remote repo
 
 it will give the new changes and it will get stored in 
 
-To show :- nano .git/FEATCH_HEAD
+syntax :- git fecth origin <branch-name>
+
+fetch will get stored in 
+
+ nano .git/FEATCH_HEAD
 
 
 git pull :-
 -------------
 it will download the new changes to local repo 
 
-
+syntax :- git pull origin <branch-name>
 
 
 
@@ -257,5 +261,6 @@ Assignment :-
 2.git fetch
 3.git pull
 4.difference between git fetch and git pull
+
 
 
