@@ -1,0 +1,199 @@
+Agenda :-
+------------------
+1.cherry pick
+2.git rebase
+3.git squash
+4.calculator --basic project
+
+1.cherry-pick :
+----------------------------
+Git cherry-picking it is used for applying some commits from one branch to another branch 
+
+master ---feature ---merge (all the commits will be added )
+
+but i want to add only one commit from feature for this reason we will be using git cherry-pick
+
+
+
+sceanrio:
+---------------------------
+when we are working in the real time project that time we will be having 10 branches 
+and while working by mistakly i have added one commit to feature branch insteted of signup 
+
+that we need to tell yes we can add the respect commit back to the singup branch 
+
+how :-
+----------
+by cherry pick we can add the commit 
+
+syntax :- git cherry-pick <commit-id>
+
+-------------------------------------------------------------
+merge ---rebase ---cherry-pick 
+
+2.git rebase :-
+---------------------------------------------
+Rebasing is to maintain a progressively straight and cleaner project history 
+
+rebasing gives rise to a perfectly linear project history which can follow the end commit of the 
+feature branch 
+
+master :1001, 1002, 1006
+
+feature : 1003, 1004, 1005
+
+git merge :- 1001, 1002,1003,1004,1005,1006
+
+git rebase :-1001, 1002, 1006(master )
+              1003, 1004, 1005(feature) 
+
+syntax :- git rebase <branch>
+
+
+real time we will having minimum 10 branches will there that time 
+if we merge it will show in linear commits 
+
+rebasing it will show linear but according to the branches 
+
+merge (based on the sceanrios we will be using both cherry-pick and rebase)
+
+
+git init <repo>
+
+3,git squash :-
+---------------------
+by using squash we will adding multiple commits in a single commit 
+
+11--12--13--14
+
+
+git show 11 
+
+cart feature :- i will add all the commits belongs to cart into a single commit 
+
+
+syntax :- git rebase -i head~2
+
+
+varun ----file --1001,1002
+
+master ---file2--1003,1004
+
+------------------------------------------------------
+4. .gitignore 
+
+by using this .gitignore i am ignoring the files 
+
+sh ,, txt 
+
+nano .gitignore 
+
+*.txt
+
+step :- touch abc.txt abc.sh  
+
+step :- nano .gitignore
+
+     *.txt
+abc.txt
+------------------------------------------
+
+calculator:-
+---------------
+master :-
+--------------------------------------------------
+<!doctype html>
+<html>
+<head>
+<title> basic calculator </title>
+<script src="addition.js"></script>
+<script src="subtraction.js"></script>
+<script src="multilpication.js"></script>
+<script src="division.js"></script>
+<script src="mul.js"></script>
+</head>
+enter first number <input type="text" id = "firstno" /> <br/>
+enter second  number <input type="text" id = "secondno" /> <br/>
+result  <input type="text" id = "result" readonly/> <br/>
+<br/><br/>
+<button onclick="add()" >add</button>
+<button onclick="subtract()" >subtract</button>
+<button onclick="multiplication()" >multiplication</button>
+<button onclick="division()" >division</button>
+<button onclick="mul()" >mul</button>
+<body>
+</html>
+
+----------------------------------------------------------------------------------
+
+
+addition-----addition:
+-------------------------------------------------
+function add() {
+var a = document.getElementById("firstno").value
+var b =  document.getElementById("secondno").value
+var result = a+b
+document.getElementById("result").value=result
+}
+
+-------------------------------------------------
+ 
+substraction:
+---------------------------------------------------
+function subtract() {
+var a = document.getElementsById("firstno").value
+var b = document.getElementsById("secondno").value
+var result
+result = a-b
+document.getElementsById("result").value=result
+}
+--------------------------------------------------------------
+
+multiplication :
+--------------------------------------------------------------
+fuction multiplication() {
+var a = document.getElementById("firstno").value
+var b = document.getElementById("secondno").value
+var result
+result = a*b
+document.getElementById("result").value=result
+}
+--------------------------------------------------------
+
+division :-
+-------------------------------
+function division(){
+var a = document.getElementById("firstno").value
+var b = document.getElementById("secondno").value
+var result
+result = a/b
+ document.getElementById("result").value=result
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
